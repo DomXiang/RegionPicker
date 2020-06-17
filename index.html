@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Region.picker.js"></script>
+</head>
+
+<body>
+    <div id="regionPicker"></div>
+    <button id="getpicker">testing</button>
+    <script>
+        const picker = new RegionPicker('#regionPicker', {
+            level: 2,
+            prov: "520000",
+            city: "520600"
+        });
+        const curAddress = picker.getPicker();
+        document.getElementById('getpicker').onclick = function () {
+            console.log(curAddress);
+        }
+    </script>
+</body>
+
+</html>
