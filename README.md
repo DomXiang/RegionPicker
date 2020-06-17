@@ -1,9 +1,16 @@
 # RegionPicker
 描述：实例化一个省市县三级联动选择选择器(包含行政区划代码数据)
 
-使用方法：new RegionPicker(selector)
+使用方法：new RegionPicker(selector，options)
+
 参数说明：
 selector：选择器；
+options:{
+    level: 2,//默认显示级别;
+    prov: "520000",//默认显示行政区划代码（省份）
+    city: "520600",//默认显示行政区划代码（城市）
+}
+如，只需要显示贵州省，则level:2,pro:"520000
 
 对像方法：
 obj.getCurRegion();//取得当前地址对像信息，返回一个对像。
@@ -22,7 +29,11 @@ obj.getCurRegion();//取得当前地址对像信息，返回一个对像。
     <button id="getadcode">测试获取当前选择</button>
 
     //javascript代码
-    const address = new RegionPicker('#container');//实例化一个对像;
+    const address = new RegionPicker('#container',{
+        level: 2,//默认显示级别;
+        prov: "520000",//默认显示行政区划代码（省份）
+        city: "520600",//默认显示行政区划代码（城市）
+    });//实例化一个对像;
 
     //取得当前选择的地址信息
     document.querySelector('#getadcode').onclick = function () {
