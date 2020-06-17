@@ -1,10 +1,7 @@
 # RegionPicker
-（含数据），包含行政区划代码数据
+描述：实例化一个省市县三级联动选择选择器(包含行政区划代码数据)
 
-new RegionPicker(selector)
-
-描述：实例化一个省市县三级联动选择选择器。
-
+使用方法：new RegionPicker(selector)
 参数说明：
 selector：选择器；
 
