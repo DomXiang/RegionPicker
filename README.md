@@ -4,12 +4,12 @@
 使用方法：new RegionPicker(selector，options)
 
 参数说明：
-selector：选择器；
-options:{
-    level: 2,//默认显示级别;
-    prov: "520000",//默认显示行政区划代码（省份）
-    city: "520600",//默认显示行政区划代码（城市）
-}
+    selector：选择器；
+    options:{
+        level: 2,//默认显示级别;
+        prov: "520000",//默认显示行政区划代码（省份）
+        city: "520600",//默认显示行政区划代码（城市）
+    }
 如，只需要显示贵州省，则level:2,pro:"520000
 
 对像方法：
